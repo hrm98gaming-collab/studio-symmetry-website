@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Symmetry | Bespoke Interior Design & Custom Woodcraft</title>
+  
+  <!-- Tailwind CSS & Lucide Icons / FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              400: '#D4AF37',
+              500: '#C5A028',
+              600: '#A38111',
+            },
+            dark: {
+              900: '#0F1115',
+              800: '#181B20',
+              700: '#22262F',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glassmorphism {
+      background: rgba(24, 27, 32, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-bg {
+      background-image: linear-gradient(to right, rgba(15, 17, 21, 0.95), rgba(15, 17, 21, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-dark-900 text-stone-300 font-sans antialiased selection:bg-gold-500 selection:text-dark-900">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 transition-all duration-300 glassmorphism border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex flex-col">
+        <span class="font-serif text-2xl font-bold tracking-widest text-white">STUDIO <span class="text-gold-400">SYMMETRY</span></span>
+        <span class="text-[10px] tracking-[0.25em] text-stone-400 uppercase -mt-1">Pvt. Ltd. | Interiors</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+        <a href="#services" class="hover:text-gold-400 transition-colors">Specialties</a>
+        <a href="#portfolio" class="hover:text-gold-400 transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+        <a href="tel:9660058568" class="border border-gold-400/60 text-gold-400 px-5 py-2.5 rounded-full hover:bg-gold-400 hover:text-dark-900 transition-all font-semibold flex items-center gap-2">
+          <i class="fa-solid fa-phone-volume text-xs"></i> 9660058568
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-2xl text-stone-300 hover:text-white" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-dark-800 border-b border-white/10 space-y-4">
+      <a href="#about" class="block text-stone-300 hover:text-gold-400 py-1">About</a>
+      <a href="#services" class="block text-stone-300 hover:text-gold-400 py-1">Specialties</a>
+      <a href="#portfolio" class="block text-stone-300 hover:text-gold-400 py-1">Portfolio</a>
+      <a href="#contact" class="block text-stone-300 hover:text-gold-400 py-1">Contact</a>
+      <a href="tel:9660058568" class="inline-block w-full text-center bg-gold-400 text-dark-900 py-2.5 rounded-full font-semibold">Call Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen hero-bg flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-32">
+      <div class="max-w-2xl space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-400/10 border border-gold-400/30 text-gold-400 text-xs font-semibold uppercase tracking-widest">
+          <i class="fa-solid fa-gem text-[10px]"></i> Architectural Precision & Interiors
+        </div>
+        <h1 class="font-serif text-4xl sm:text-6xl text-white font-bold leading-tight">
+          Where Geometry Meets <span class="text-gold-400 italic">Elegance</span>.
+        </h1>
+        <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed">
+          Crafting modular kitchens, bespoke almirahs, luxury wooden doors, and complete interior environments tailored to perfection in Gurugram.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-4">
+          <a href="#contact" class="px-8 py-4 bg-gold-400 text-dark-900 font-bold rounded-lg hover:bg-gold-500 transition-all shadow-lg shadow-gold-500/10 inline-flex items-center gap-2">
+            Schedule Consultation <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="https://wa.me/919660058568?text=Hi%20Studio%20Symmetry,%20I'd%20like%20to%20inquire%20about%20interior%20design%20services." target="_blank" class="px-8 py-4 bg-dark-800 text-stone-200 border border-stone-700 font-semibold rounded-lg hover:border-gold-400/50 hover:text-white transition-all inline-flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Highlights Bar -->
+  <div class="bg-dark-800 border-y border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="font-serif text-3xl font-bold text-gold-400">100%</p>
+        <p class="text-xs text-stone-400 mt-1 uppercase tracking-wider">Custom Woodwork</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl font-bold text-gold-400">10+ Yrs</p>
+        <p class="text-xs text-stone-400 mt-1 uppercase tracking-wider">Material Warranty</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl font-bold text-gold-400">3D</p>
+        <p class="text-xs text-stone-400 mt-1 uppercase tracking-wider">Realistic Visuals</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl font-bold text-gold-400">45 Days</p>
+        <p class="text-xs text-stone-400 mt-1 uppercase tracking-wider">Execution Timeline</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services / Specialties -->
+  <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+      <span class="text-xs font-semibold tracking-widest text-gold-400 uppercase">Core Expertise</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold">Tailored Craftsmanship</h2>
+      <p class="text-stone-400 text-sm">Every element engineered for maximum functionality and timeless aesthetics.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Modular Kitchens -->
+      <div class="bg-dark-800 rounded-2xl overflow-hidden border border-white/5 hover:border-gold-400/40 transition-all group">
+        <div class="h-60 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-8 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold-400/10 flex items-center justify-center text-gold-400 mb-2">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Modular Kitchens</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">
+            Ergonomic island designs, acrylic & PU finishes, soft-close German hardware, and heat-resistant quartz countertops.
+          </p>
+        </div>
+      </div>
+
+      <!-- Luxury Almirahs & Wardrobes -->
+      <div class="bg-dark-800 rounded-2xl overflow-hidden border border-white/5 hover:border-gold-400/40 transition-all group">
+        <div class="h-60 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Luxury Almirahs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-8 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold-400/10 flex items-center justify-center text-gold-400 mb-2">
+            <i class="fa-solid fa-door-closed"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Bespoke Almirahs & Closets</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">
+            Floor-to-ceiling sliding wardrobes, tinted glass walk-in closets, integrated sensor LED lighting, and premium veneer finishes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Designer Doors & Partitions -->
+      <div class="bg-dark-800 rounded-2xl overflow-hidden border border-white/5 hover:border-gold-400/40 transition-all group">
+        <div class="h-60 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Designer Doors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-8 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-gold-400/10 flex items-center justify-center text-gold-400 mb-2">
+            <i class="fa-solid fa-archway"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Grand Main Doors & Paneling</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">
+            Solid teakwood entryways, acoustic fluted panels, concealed frame doors, and digital lock integration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <section id="portfolio" class="py-24 bg-dark-800 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-semibold tracking-widest text-gold-400 uppercase">Recent Projects</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold mt-2">Signature Symmetry</h2>
+        </div>
+        <a href="https://www.instagram.com/studio_symmetry" target="_blank" class="text-gold-400 hover:text-white transition-colors text-sm font-semibold flex items-center gap-2 mt-4 md:mt-0">
+          View all on Instagram <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative group rounded-xl overflow-hidden h-72">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" alt="Living Interior">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <p class="text-white font-serif font-bold text-lg">Minimalist Penthouse Living</p>
+              <p class="text-stone-300 text-xs">Gurugram Residence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden h-72">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" alt="Kitchen Space">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <p class="text-white font-serif font-bold text-lg">Emerald & Brass Kitchen</p>
+              <p class="text-stone-300 text-xs">Sector 23 Villa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden h-72">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" alt="Wardrobe & Bed">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex items-end">
+            <div>
+              <p class="text-white font-serif font-bold text-lg">Fluted Glass Wardrobes</p>
+              <p class="text-stone-300 text-xs">Sector 21A Apartment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location -->
+  <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div>
+          <span class="text-xs font-semibold tracking-widest text-gold-400 uppercase">Get in Touch</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white font-bold mt-2">Let's Design Your Dream Space</h2>
+          <p class="text-stone-400 text-sm mt-3 leading-relaxed">
+            Visit our studio or drop an inquiry for a free site measurement and 3D architectural plan estimation.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-gold-400/10 flex items-center justify-center text-gold-400 flex-shrink-0 border border-gold-400/20">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-medium text-sm">Direct Line</h4>
+              <a href="tel:9660058568" class="text-gold-400 text-lg font-bold hover:underline">+91 96600 58568</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-gold-400/10 flex items-center justify-center text-gold-400 flex-shrink-0 border border-gold-400/20">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-medium text-sm">Studio Location</h4>
+              <p class="text-stone-300 text-sm leading-relaxed mt-1">
+                798, Sector 21A, Cartarpuri Alias Daulatpur Nas,<br>
+                Pocket E, Sector 21E, Sector 23,<br>
+                Gurugram, Haryana 122016
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 pt-2">
+            <a href="https://www.instagram.com/studio_symmetry?igsi=MTFnNjBuOHM1dDBkNw==" target="_blank" class="w-11 h-11 rounded-full bg-dark-800 border border-stone-700 flex items-center justify-center text-stone-300 hover:text-white hover:border-gold-400 transition-all text-lg" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="w-11 h-11 rounded-full bg-dark-800 border border-stone-700 flex items-center justify-center text-stone-300 hover:text-white hover:border-gold-400 transition-all text-lg" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/919660058568" target="_blank" class="w-11 h-11 rounded-full bg-dark-800 border border-stone-700 flex items-center justify-center text-emerald-400 hover:border-emerald-400 transition-all text-lg" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Inquiry Form -->
+      <div class="bg-dark-800 p-8 sm:p-10 rounded-2xl border border-white/5">
+        <h3 class="font-serif text-2xl text-white font-bold mb-6">Request a Quote</h3>
+        <form onsubmit="handleInquiry(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2 font-medium">Your Name</label>
+            <input type="text" required placeholder="e.g. Aman Sharma" class="w-full bg-dark-900 border border-stone-700 rounded-lg px-4 py-3 text-stone-200 text-sm focus:outline-none focus:border-gold-400">
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2 font-medium">Phone Number</label>
+            <input type="tel" required placeholder="e.g. 9876543210" class="w-full bg-dark-900 border border-stone-700 rounded-lg px-4 py-3 text-stone-200 text-sm focus:outline-none focus:border-gold-400">
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2 font-medium">Requirement Type</label>
+            <select class="w-full bg-dark-900 border border-stone-700 rounded-lg px-4 py-3 text-stone-200 text-sm focus:outline-none focus:border-gold-400">
+              <option>Modular Kitchen</option>
+              <option>Custom Almirahs / Wardrobes</option>
+              <option>Main Doors & Paneling</option>
+              <option>Complete Home Interior</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2 font-medium">Message / Notes</label>
+            <textarea rows="3" placeholder="Describe room dimensions, preferred finish, etc." class="w-full bg-dark-900 border border-stone-700 rounded-lg px-4 py-3 text-stone-200 text-sm focus:outline-none focus:border-gold-400"></textarea>
+          </div>
+          <button type="submit" class="w-full py-4 bg-gold-400 text-dark-900 font-bold rounded-lg hover:bg-gold-500 transition-all uppercase tracking-wider text-xs">
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-900 border-t border-white/5 py-8 text-center text-xs text-stone-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Studio Symmetry Pvt. Ltd. All rights reserved.</p>
+      <p>Sector 21A / Sector 23, Gurugram, Haryana 122016</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Simple Form Submission Handler
+    function handleInquiry(e) {
+      e.preventDefault();
+      alert('Thank you for contacting Studio Symmetry! We will reach out to you shortly.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
